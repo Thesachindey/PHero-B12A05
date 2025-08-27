@@ -12,13 +12,17 @@
     <!-- daisyui+tailwind css cdn  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="bg-[#f5fff6]">
     <!-- header section start here -->
     <header>
         <nav
-            class="flex flex-col md:flex-row place-items-start md:items-center gap-4 md:gap-8 justify-between px-8 py-2 w-full">
+            class="flex flex-col md:flex-row place-items-start md:items-center gap-4 md:gap-8 justify-between px-8 py-2 w-full bg-white">
             <!-- logo section -->
             <div class="logo-section flex items-center gap-2">
                 <img class="w-10 " src="./assets/logo.png" alt="Logo">
@@ -54,6 +58,338 @@
 
         </div>
     </header>
+
+    <main class="flex items-center justify-center p-8 w-full mx-auto">
+
+        <div class=" grid grid-cols-3 grid-rows-3 gap-4">
+
+            <div id="card" class="bg-white  py-8 px-6 rounded-xl shadow-md  gap-4 flex flex-col">
+                <div class="item1 flex items-center justify-between ">
+                    <div class="img-con p-2 rounded-xl bg-red-200 inline-block ">
+                        <img class="w-6" src="./assets/emergency.png" alt="">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="item2">
+                    <h1 class="text-lg font-bold">National Emergency Number</h1>
+                    <p class="text-sm text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="item3  flex flex-col gap-1 ">
+                    <span class="text-2xl font-bold">999</span>
+                    <div>
+                        <span class="bg-[#f2f2f2] px-4 py-1 rounded-full text-[#5C5C5C] ">All</span>
+                    </div>
+                </div>
+                <div class="item4 w-full flex gap-1">
+                    <button class="btn btn-outline w-1/2 text-[#5C5C5C] " id="copyBtn">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button class="btn btn-outline w-1/2 bg-[#00A63E] text-white">
+                        <svg viewBox="0 0 13.8335 13.8336" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="13.833496" height="13.833618" fill="none"
+                            customFrame="#000000">
+                            <path id="Vector"
+                                d="M0.905251 4.62167C0.523251 3.57901 0.873251 2.43367 1.65858 1.64834L2.14458 1.16301C2.27524 1.03209 2.43044 0.928217 2.60129 0.857348C2.77214 0.786479 2.95529 0.75 3.14025 0.75C3.32522 0.75 3.50836 0.786479 3.67921 0.857348C3.85006 0.928217 4.00526 1.03209 4.13592 1.16301L5.27392 2.30101C5.40484 2.43167 5.50871 2.58686 5.57958 2.75771C5.65045 2.92856 5.68692 3.11171 5.68692 3.29667C5.68692 3.48164 5.65045 3.66479 5.57958 3.83564C5.50871 4.00649 5.40484 4.16168 5.27392 4.29234L4.99392 4.57234C4.88184 4.68439 4.79294 4.81743 4.73228 4.96384C4.67162 5.11026 4.6404 5.26719 4.6404 5.42567C4.6404 5.58416 4.67162 5.74109 4.73228 5.88751C4.79294 6.03392 4.88184 6.16695 4.99392 6.27901L7.55392 8.83967C7.66597 8.95175 7.799 9.04066 7.94542 9.10131C8.09184 9.16197 8.24877 9.19319 8.40725 9.19319C8.56573 9.19319 8.72267 9.16197 8.86908 9.10131C9.0155 9.04066 9.14853 8.95175 9.26058 8.83967L9.54125 8.55967C9.67191 8.42875 9.82711 8.32488 9.99796 8.25401C10.1688 8.18315 10.352 8.14667 10.5369 8.14667C10.7219 8.14667 10.905 8.18315 11.0759 8.25401C11.2467 8.32488 11.4019 8.42875 11.5326 8.55967L12.6706 9.69767C12.8015 9.82833 12.9054 9.98353 12.9762 10.1544C13.0471 10.3252 13.0836 10.5084 13.0836 10.6933C13.0836 10.8783 13.0471 11.0615 12.9762 11.2323C12.9054 11.4032 12.8015 11.5584 12.6706 11.689L12.1853 12.1743C11.3999 12.9603 10.2546 13.3103 9.21192 12.9283C7.30482 12.234 5.57243 11.1314 4.13592 9.69767C2.70219 8.26116 1.5996 6.52877 0.905251 4.62167Z"
+                                fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linejoin="round"
+                                stroke-width="1.5" />
+                        </svg>
+
+                        Call
+                    </button>
+                </div>
+            </div>
+
+            <div id="card" class="bg-white  py-8 px-6 rounded-xl shadow-md  gap-4 flex flex-col">
+                <div class="item1 flex items-center justify-between ">
+                    <div class="img-con p-2 rounded-xl bg-red-200 inline-block ">
+                        <img class="w-6" src="./assets/emergency.png" alt="">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="item2">
+                    <h1 class="text-lg font-bold">National Emergency Number</h1>
+                    <p class="text-sm text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="item3  flex flex-col gap-1 ">
+                    <span class="text-2xl font-bold">999</span>
+                    <div>
+                        <span class="bg-[#f2f2f2] px-4 py-1 rounded-full text-[#5C5C5C] ">All</span>
+                    </div>
+                </div>
+                <div class="item4 w-full flex gap-1">
+                    <button class="btn btn-outline w-1/2 text-[#5C5C5C] " id="copyBtn">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button class="btn btn-outline w-1/2 bg-[#00A63E] text-white">
+                        <svg viewBox="0 0 13.8335 13.8336" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="13.833496" height="13.833618" fill="none"
+                            customFrame="#000000">
+                            <path id="Vector"
+                                d="M0.905251 4.62167C0.523251 3.57901 0.873251 2.43367 1.65858 1.64834L2.14458 1.16301C2.27524 1.03209 2.43044 0.928217 2.60129 0.857348C2.77214 0.786479 2.95529 0.75 3.14025 0.75C3.32522 0.75 3.50836 0.786479 3.67921 0.857348C3.85006 0.928217 4.00526 1.03209 4.13592 1.16301L5.27392 2.30101C5.40484 2.43167 5.50871 2.58686 5.57958 2.75771C5.65045 2.92856 5.68692 3.11171 5.68692 3.29667C5.68692 3.48164 5.65045 3.66479 5.57958 3.83564C5.50871 4.00649 5.40484 4.16168 5.27392 4.29234L4.99392 4.57234C4.88184 4.68439 4.79294 4.81743 4.73228 4.96384C4.67162 5.11026 4.6404 5.26719 4.6404 5.42567C4.6404 5.58416 4.67162 5.74109 4.73228 5.88751C4.79294 6.03392 4.88184 6.16695 4.99392 6.27901L7.55392 8.83967C7.66597 8.95175 7.799 9.04066 7.94542 9.10131C8.09184 9.16197 8.24877 9.19319 8.40725 9.19319C8.56573 9.19319 8.72267 9.16197 8.86908 9.10131C9.0155 9.04066 9.14853 8.95175 9.26058 8.83967L9.54125 8.55967C9.67191 8.42875 9.82711 8.32488 9.99796 8.25401C10.1688 8.18315 10.352 8.14667 10.5369 8.14667C10.7219 8.14667 10.905 8.18315 11.0759 8.25401C11.2467 8.32488 11.4019 8.42875 11.5326 8.55967L12.6706 9.69767C12.8015 9.82833 12.9054 9.98353 12.9762 10.1544C13.0471 10.3252 13.0836 10.5084 13.0836 10.6933C13.0836 10.8783 13.0471 11.0615 12.9762 11.2323C12.9054 11.4032 12.8015 11.5584 12.6706 11.689L12.1853 12.1743C11.3999 12.9603 10.2546 13.3103 9.21192 12.9283C7.30482 12.234 5.57243 11.1314 4.13592 9.69767C2.70219 8.26116 1.5996 6.52877 0.905251 4.62167Z"
+                                fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linejoin="round"
+                                stroke-width="1.5" />
+                        </svg>
+
+                        Call
+                    </button>
+                </div>
+            </div>
+
+            <div id="card" class="bg-white  py-8 px-6 rounded-xl shadow-md  gap-4 flex flex-col">
+                <div class="item1 flex items-center justify-between ">
+                    <div class="img-con p-2 rounded-xl bg-red-200 inline-block ">
+                        <img class="w-6" src="./assets/emergency.png" alt="">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="item2">
+                    <h1 class="text-lg font-bold">National Emergency Number</h1>
+                    <p class="text-sm text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="item3  flex flex-col gap-1 ">
+                    <span class="text-2xl font-bold">999</span>
+                    <div>
+                        <span class="bg-[#f2f2f2] px-4 py-1 rounded-full text-[#5C5C5C] ">All</span>
+                    </div>
+                </div>
+                <div class="item4 w-full flex gap-1">
+                    <button class="btn btn-outline w-1/2 text-[#5C5C5C] " id="copyBtn">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button class="btn btn-outline w-1/2 bg-[#00A63E] text-white">
+                        <svg viewBox="0 0 13.8335 13.8336" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="13.833496" height="13.833618" fill="none"
+                            customFrame="#000000">
+                            <path id="Vector"
+                                d="M0.905251 4.62167C0.523251 3.57901 0.873251 2.43367 1.65858 1.64834L2.14458 1.16301C2.27524 1.03209 2.43044 0.928217 2.60129 0.857348C2.77214 0.786479 2.95529 0.75 3.14025 0.75C3.32522 0.75 3.50836 0.786479 3.67921 0.857348C3.85006 0.928217 4.00526 1.03209 4.13592 1.16301L5.27392 2.30101C5.40484 2.43167 5.50871 2.58686 5.57958 2.75771C5.65045 2.92856 5.68692 3.11171 5.68692 3.29667C5.68692 3.48164 5.65045 3.66479 5.57958 3.83564C5.50871 4.00649 5.40484 4.16168 5.27392 4.29234L4.99392 4.57234C4.88184 4.68439 4.79294 4.81743 4.73228 4.96384C4.67162 5.11026 4.6404 5.26719 4.6404 5.42567C4.6404 5.58416 4.67162 5.74109 4.73228 5.88751C4.79294 6.03392 4.88184 6.16695 4.99392 6.27901L7.55392 8.83967C7.66597 8.95175 7.799 9.04066 7.94542 9.10131C8.09184 9.16197 8.24877 9.19319 8.40725 9.19319C8.56573 9.19319 8.72267 9.16197 8.86908 9.10131C9.0155 9.04066 9.14853 8.95175 9.26058 8.83967L9.54125 8.55967C9.67191 8.42875 9.82711 8.32488 9.99796 8.25401C10.1688 8.18315 10.352 8.14667 10.5369 8.14667C10.7219 8.14667 10.905 8.18315 11.0759 8.25401C11.2467 8.32488 11.4019 8.42875 11.5326 8.55967L12.6706 9.69767C12.8015 9.82833 12.9054 9.98353 12.9762 10.1544C13.0471 10.3252 13.0836 10.5084 13.0836 10.6933C13.0836 10.8783 13.0471 11.0615 12.9762 11.2323C12.9054 11.4032 12.8015 11.5584 12.6706 11.689L12.1853 12.1743C11.3999 12.9603 10.2546 13.3103 9.21192 12.9283C7.30482 12.234 5.57243 11.1314 4.13592 9.69767C2.70219 8.26116 1.5996 6.52877 0.905251 4.62167Z"
+                                fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linejoin="round"
+                                stroke-width="1.5" />
+                        </svg>
+
+                        Call
+                    </button>
+                </div>
+            </div>
+
+            <div id="card" class="bg-white  py-8 px-6 rounded-xl shadow-md  gap-4 flex flex-col">
+                <div class="item1 flex items-center justify-between ">
+                    <div class="img-con p-2 rounded-xl bg-red-200 inline-block ">
+                        <img class="w-6" src="./assets/emergency.png" alt="">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="item2">
+                    <h1 class="text-lg font-bold">National Emergency Number</h1>
+                    <p class="text-sm text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="item3  flex flex-col gap-1 ">
+                    <span class="text-2xl font-bold">999</span>
+                    <div>
+                        <span class="bg-[#f2f2f2] px-4 py-1 rounded-full text-[#5C5C5C] ">All</span>
+                    </div>
+                </div>
+                <div class="item4 w-full flex gap-1">
+                    <button class="btn btn-outline w-1/2 text-[#5C5C5C] " id="copyBtn">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button class="btn btn-outline w-1/2 bg-[#00A63E] text-white">
+                        <svg viewBox="0 0 13.8335 13.8336" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="13.833496" height="13.833618" fill="none"
+                            customFrame="#000000">
+                            <path id="Vector"
+                                d="M0.905251 4.62167C0.523251 3.57901 0.873251 2.43367 1.65858 1.64834L2.14458 1.16301C2.27524 1.03209 2.43044 0.928217 2.60129 0.857348C2.77214 0.786479 2.95529 0.75 3.14025 0.75C3.32522 0.75 3.50836 0.786479 3.67921 0.857348C3.85006 0.928217 4.00526 1.03209 4.13592 1.16301L5.27392 2.30101C5.40484 2.43167 5.50871 2.58686 5.57958 2.75771C5.65045 2.92856 5.68692 3.11171 5.68692 3.29667C5.68692 3.48164 5.65045 3.66479 5.57958 3.83564C5.50871 4.00649 5.40484 4.16168 5.27392 4.29234L4.99392 4.57234C4.88184 4.68439 4.79294 4.81743 4.73228 4.96384C4.67162 5.11026 4.6404 5.26719 4.6404 5.42567C4.6404 5.58416 4.67162 5.74109 4.73228 5.88751C4.79294 6.03392 4.88184 6.16695 4.99392 6.27901L7.55392 8.83967C7.66597 8.95175 7.799 9.04066 7.94542 9.10131C8.09184 9.16197 8.24877 9.19319 8.40725 9.19319C8.56573 9.19319 8.72267 9.16197 8.86908 9.10131C9.0155 9.04066 9.14853 8.95175 9.26058 8.83967L9.54125 8.55967C9.67191 8.42875 9.82711 8.32488 9.99796 8.25401C10.1688 8.18315 10.352 8.14667 10.5369 8.14667C10.7219 8.14667 10.905 8.18315 11.0759 8.25401C11.2467 8.32488 11.4019 8.42875 11.5326 8.55967L12.6706 9.69767C12.8015 9.82833 12.9054 9.98353 12.9762 10.1544C13.0471 10.3252 13.0836 10.5084 13.0836 10.6933C13.0836 10.8783 13.0471 11.0615 12.9762 11.2323C12.9054 11.4032 12.8015 11.5584 12.6706 11.689L12.1853 12.1743C11.3999 12.9603 10.2546 13.3103 9.21192 12.9283C7.30482 12.234 5.57243 11.1314 4.13592 9.69767C2.70219 8.26116 1.5996 6.52877 0.905251 4.62167Z"
+                                fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linejoin="round"
+                                stroke-width="1.5" />
+                        </svg>
+
+                        Call
+                    </button>
+                </div>
+            </div>
+
+            <div id="card" class="bg-white  py-8 px-6 rounded-xl shadow-md  gap-4 flex flex-col">
+                <div class="item1 flex items-center justify-between ">
+                    <div class="img-con p-2 rounded-xl bg-red-200 inline-block ">
+                        <img class="w-6" src="./assets/emergency.png" alt="">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="item2">
+                    <h1 class="text-lg font-bold">National Emergency Number</h1>
+                    <p class="text-sm text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="item3  flex flex-col gap-1 ">
+                    <span class="text-2xl font-bold">999</span>
+                    <div>
+                        <span class="bg-[#f2f2f2] px-4 py-1 rounded-full text-[#5C5C5C] ">All</span>
+                    </div>
+                </div>
+                <div class="item4 w-full flex gap-1">
+                    <button class="btn btn-outline w-1/2 text-[#5C5C5C] " id="copyBtn">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button class="btn btn-outline w-1/2 bg-[#00A63E] text-white">
+                        <svg viewBox="0 0 13.8335 13.8336" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="13.833496" height="13.833618" fill="none"
+                            customFrame="#000000">
+                            <path id="Vector"
+                                d="M0.905251 4.62167C0.523251 3.57901 0.873251 2.43367 1.65858 1.64834L2.14458 1.16301C2.27524 1.03209 2.43044 0.928217 2.60129 0.857348C2.77214 0.786479 2.95529 0.75 3.14025 0.75C3.32522 0.75 3.50836 0.786479 3.67921 0.857348C3.85006 0.928217 4.00526 1.03209 4.13592 1.16301L5.27392 2.30101C5.40484 2.43167 5.50871 2.58686 5.57958 2.75771C5.65045 2.92856 5.68692 3.11171 5.68692 3.29667C5.68692 3.48164 5.65045 3.66479 5.57958 3.83564C5.50871 4.00649 5.40484 4.16168 5.27392 4.29234L4.99392 4.57234C4.88184 4.68439 4.79294 4.81743 4.73228 4.96384C4.67162 5.11026 4.6404 5.26719 4.6404 5.42567C4.6404 5.58416 4.67162 5.74109 4.73228 5.88751C4.79294 6.03392 4.88184 6.16695 4.99392 6.27901L7.55392 8.83967C7.66597 8.95175 7.799 9.04066 7.94542 9.10131C8.09184 9.16197 8.24877 9.19319 8.40725 9.19319C8.56573 9.19319 8.72267 9.16197 8.86908 9.10131C9.0155 9.04066 9.14853 8.95175 9.26058 8.83967L9.54125 8.55967C9.67191 8.42875 9.82711 8.32488 9.99796 8.25401C10.1688 8.18315 10.352 8.14667 10.5369 8.14667C10.7219 8.14667 10.905 8.18315 11.0759 8.25401C11.2467 8.32488 11.4019 8.42875 11.5326 8.55967L12.6706 9.69767C12.8015 9.82833 12.9054 9.98353 12.9762 10.1544C13.0471 10.3252 13.0836 10.5084 13.0836 10.6933C13.0836 10.8783 13.0471 11.0615 12.9762 11.2323C12.9054 11.4032 12.8015 11.5584 12.6706 11.689L12.1853 12.1743C11.3999 12.9603 10.2546 13.3103 9.21192 12.9283C7.30482 12.234 5.57243 11.1314 4.13592 9.69767C2.70219 8.26116 1.5996 6.52877 0.905251 4.62167Z"
+                                fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linejoin="round"
+                                stroke-width="1.5" />
+                        </svg>
+
+                        Call
+                    </button>
+                </div>
+            </div>
+
+            <div id="card" class="bg-white  py-8 px-6 rounded-xl shadow-md  gap-4 flex flex-col">
+                <div class="item1 flex items-center justify-between ">
+                    <div class="img-con p-2 rounded-xl bg-red-200 inline-block ">
+                        <img class="w-6" src="./assets/emergency.png" alt="">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="item2">
+                    <h1 class="text-lg font-bold">National Emergency Number</h1>
+                    <p class="text-sm text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="item3  flex flex-col gap-1 ">
+                    <span class="text-2xl font-bold">999</span>
+                    <div>
+                        <span class="bg-[#f2f2f2] px-4 py-1 rounded-full text-[#5C5C5C] ">All</span>
+                    </div>
+                </div>
+                <div class="item4 w-full flex gap-1">
+                    <button class="btn btn-outline w-1/2 text-[#5C5C5C] " id="copyBtn">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button class="btn btn-outline w-1/2 bg-[#00A63E] text-white">
+                        <svg viewBox="0 0 13.8335 13.8336" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="13.833496" height="13.833618" fill="none"
+                            customFrame="#000000">
+                            <path id="Vector"
+                                d="M0.905251 4.62167C0.523251 3.57901 0.873251 2.43367 1.65858 1.64834L2.14458 1.16301C2.27524 1.03209 2.43044 0.928217 2.60129 0.857348C2.77214 0.786479 2.95529 0.75 3.14025 0.75C3.32522 0.75 3.50836 0.786479 3.67921 0.857348C3.85006 0.928217 4.00526 1.03209 4.13592 1.16301L5.27392 2.30101C5.40484 2.43167 5.50871 2.58686 5.57958 2.75771C5.65045 2.92856 5.68692 3.11171 5.68692 3.29667C5.68692 3.48164 5.65045 3.66479 5.57958 3.83564C5.50871 4.00649 5.40484 4.16168 5.27392 4.29234L4.99392 4.57234C4.88184 4.68439 4.79294 4.81743 4.73228 4.96384C4.67162 5.11026 4.6404 5.26719 4.6404 5.42567C4.6404 5.58416 4.67162 5.74109 4.73228 5.88751C4.79294 6.03392 4.88184 6.16695 4.99392 6.27901L7.55392 8.83967C7.66597 8.95175 7.799 9.04066 7.94542 9.10131C8.09184 9.16197 8.24877 9.19319 8.40725 9.19319C8.56573 9.19319 8.72267 9.16197 8.86908 9.10131C9.0155 9.04066 9.14853 8.95175 9.26058 8.83967L9.54125 8.55967C9.67191 8.42875 9.82711 8.32488 9.99796 8.25401C10.1688 8.18315 10.352 8.14667 10.5369 8.14667C10.7219 8.14667 10.905 8.18315 11.0759 8.25401C11.2467 8.32488 11.4019 8.42875 11.5326 8.55967L12.6706 9.69767C12.8015 9.82833 12.9054 9.98353 12.9762 10.1544C13.0471 10.3252 13.0836 10.5084 13.0836 10.6933C13.0836 10.8783 13.0471 11.0615 12.9762 11.2323C12.9054 11.4032 12.8015 11.5584 12.6706 11.689L12.1853 12.1743C11.3999 12.9603 10.2546 13.3103 9.21192 12.9283C7.30482 12.234 5.57243 11.1314 4.13592 9.69767C2.70219 8.26116 1.5996 6.52877 0.905251 4.62167Z"
+                                fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linejoin="round"
+                                stroke-width="1.5" />
+                        </svg>
+
+                        Call
+                    </button>
+                </div>
+            </div>
+
+            <div id="card" class="bg-white  py-8 px-6 rounded-xl shadow-md  gap-4 flex flex-col">
+                <div class="item1 flex items-center justify-between ">
+                    <div class="img-con p-2 rounded-xl bg-red-200 inline-block ">
+                        <img class="w-6" src="./assets/emergency.png" alt="">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="item2">
+                    <h1 class="text-lg font-bold">National Emergency Number</h1>
+                    <p class="text-sm text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="item3  flex flex-col gap-1 ">
+                    <span class="text-2xl font-bold">999</span>
+                    <div>
+                        <span class="bg-[#f2f2f2] px-4 py-1 rounded-full text-[#5C5C5C] ">All</span>
+                    </div>
+                </div>
+                <div class="item4 w-full flex gap-1">
+                    <button class="btn btn-outline w-1/2 text-[#5C5C5C] " id="copyBtn">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button class="btn btn-outline w-1/2 bg-[#00A63E] text-white">
+                        <svg viewBox="0 0 13.8335 13.8336" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="13.833496" height="13.833618" fill="none"
+                            customFrame="#000000">
+                            <path id="Vector"
+                                d="M0.905251 4.62167C0.523251 3.57901 0.873251 2.43367 1.65858 1.64834L2.14458 1.16301C2.27524 1.03209 2.43044 0.928217 2.60129 0.857348C2.77214 0.786479 2.95529 0.75 3.14025 0.75C3.32522 0.75 3.50836 0.786479 3.67921 0.857348C3.85006 0.928217 4.00526 1.03209 4.13592 1.16301L5.27392 2.30101C5.40484 2.43167 5.50871 2.58686 5.57958 2.75771C5.65045 2.92856 5.68692 3.11171 5.68692 3.29667C5.68692 3.48164 5.65045 3.66479 5.57958 3.83564C5.50871 4.00649 5.40484 4.16168 5.27392 4.29234L4.99392 4.57234C4.88184 4.68439 4.79294 4.81743 4.73228 4.96384C4.67162 5.11026 4.6404 5.26719 4.6404 5.42567C4.6404 5.58416 4.67162 5.74109 4.73228 5.88751C4.79294 6.03392 4.88184 6.16695 4.99392 6.27901L7.55392 8.83967C7.66597 8.95175 7.799 9.04066 7.94542 9.10131C8.09184 9.16197 8.24877 9.19319 8.40725 9.19319C8.56573 9.19319 8.72267 9.16197 8.86908 9.10131C9.0155 9.04066 9.14853 8.95175 9.26058 8.83967L9.54125 8.55967C9.67191 8.42875 9.82711 8.32488 9.99796 8.25401C10.1688 8.18315 10.352 8.14667 10.5369 8.14667C10.7219 8.14667 10.905 8.18315 11.0759 8.25401C11.2467 8.32488 11.4019 8.42875 11.5326 8.55967L12.6706 9.69767C12.8015 9.82833 12.9054 9.98353 12.9762 10.1544C13.0471 10.3252 13.0836 10.5084 13.0836 10.6933C13.0836 10.8783 13.0471 11.0615 12.9762 11.2323C12.9054 11.4032 12.8015 11.5584 12.6706 11.689L12.1853 12.1743C11.3999 12.9603 10.2546 13.3103 9.21192 12.9283C7.30482 12.234 5.57243 11.1314 4.13592 9.69767C2.70219 8.26116 1.5996 6.52877 0.905251 4.62167Z"
+                                fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linejoin="round"
+                                stroke-width="1.5" />
+                        </svg>
+
+                        Call
+                    </button>
+                </div>
+            </div>
+
+            <div id="card" class="bg-white  py-8 px-6 rounded-xl shadow-md  gap-4 flex flex-col">
+                <div class="item1 flex items-center justify-between ">
+                    <div class="img-con p-2 rounded-xl bg-red-200 inline-block ">
+                        <img class="w-6" src="./assets/emergency.png" alt="">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="item2">
+                    <h1 class="text-lg font-bold">National Emergency Number</h1>
+                    <p class="text-sm text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="item3  flex flex-col gap-1 ">
+                    <span class="text-2xl font-bold">999</span>
+                    <div>
+                        <span class="bg-[#f2f2f2] px-4 py-1 rounded-full text-[#5C5C5C] ">All</span>
+                    </div>
+                </div>
+                <div class="item4 w-full flex gap-1">
+                    <button class="btn btn-outline w-1/2 text-[#5C5C5C] " id="copyBtn">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button class="btn btn-outline w-1/2 bg-[#00A63E] text-white">
+                        <svg viewBox="0 0 13.8335 13.8336" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="13.833496" height="13.833618" fill="none"
+                            customFrame="#000000">
+                            <path id="Vector"
+                                d="M0.905251 4.62167C0.523251 3.57901 0.873251 2.43367 1.65858 1.64834L2.14458 1.16301C2.27524 1.03209 2.43044 0.928217 2.60129 0.857348C2.77214 0.786479 2.95529 0.75 3.14025 0.75C3.32522 0.75 3.50836 0.786479 3.67921 0.857348C3.85006 0.928217 4.00526 1.03209 4.13592 1.16301L5.27392 2.30101C5.40484 2.43167 5.50871 2.58686 5.57958 2.75771C5.65045 2.92856 5.68692 3.11171 5.68692 3.29667C5.68692 3.48164 5.65045 3.66479 5.57958 3.83564C5.50871 4.00649 5.40484 4.16168 5.27392 4.29234L4.99392 4.57234C4.88184 4.68439 4.79294 4.81743 4.73228 4.96384C4.67162 5.11026 4.6404 5.26719 4.6404 5.42567C4.6404 5.58416 4.67162 5.74109 4.73228 5.88751C4.79294 6.03392 4.88184 6.16695 4.99392 6.27901L7.55392 8.83967C7.66597 8.95175 7.799 9.04066 7.94542 9.10131C8.09184 9.16197 8.24877 9.19319 8.40725 9.19319C8.56573 9.19319 8.72267 9.16197 8.86908 9.10131C9.0155 9.04066 9.14853 8.95175 9.26058 8.83967L9.54125 8.55967C9.67191 8.42875 9.82711 8.32488 9.99796 8.25401C10.1688 8.18315 10.352 8.14667 10.5369 8.14667C10.7219 8.14667 10.905 8.18315 11.0759 8.25401C11.2467 8.32488 11.4019 8.42875 11.5326 8.55967L12.6706 9.69767C12.8015 9.82833 12.9054 9.98353 12.9762 10.1544C13.0471 10.3252 13.0836 10.5084 13.0836 10.6933C13.0836 10.8783 13.0471 11.0615 12.9762 11.2323C12.9054 11.4032 12.8015 11.5584 12.6706 11.689L12.1853 12.1743C11.3999 12.9603 10.2546 13.3103 9.21192 12.9283C7.30482 12.234 5.57243 11.1314 4.13592 9.69767C2.70219 8.26116 1.5996 6.52877 0.905251 4.62167Z"
+                                fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linejoin="round"
+                                stroke-width="1.5" />
+                        </svg>
+
+                        Call
+                    </button>
+                </div>
+            </div>
+
+            <div id="card" class="bg-white  py-8 px-6 rounded-xl shadow-md  gap-4 flex flex-col">
+                <div class="item1 flex items-center justify-between ">
+                    <div class="img-con p-2 rounded-xl bg-red-200 inline-block ">
+                        <img class="w-6" src="./assets/emergency.png" alt="">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="item2">
+                    <h1 class="text-lg font-bold">National Emergency Number</h1>
+                    <p class="text-sm text-[#5C5C5C]">National Emergency</p>
+                </div>
+                <div class="item3  flex flex-col gap-1 ">
+                    <span class="text-2xl font-bold">999</span>
+                    <div>
+                        <span class="bg-[#f2f2f2] px-4 py-1 rounded-full text-[#5C5C5C] ">All</span>
+                    </div>
+                </div>
+                <div class="item4 w-full flex gap-1">
+                    <button class="btn btn-outline w-1/2 text-[#5C5C5C] " id="copyBtn">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                    <button class="btn btn-outline w-1/2 bg-[#00A63E] text-white">
+                        <svg viewBox="0 0 13.8335 13.8336" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="13.833496" height="13.833618" fill="none"
+                            customFrame="#000000">
+                            <path id="Vector"
+                                d="M0.905251 4.62167C0.523251 3.57901 0.873251 2.43367 1.65858 1.64834L2.14458 1.16301C2.27524 1.03209 2.43044 0.928217 2.60129 0.857348C2.77214 0.786479 2.95529 0.75 3.14025 0.75C3.32522 0.75 3.50836 0.786479 3.67921 0.857348C3.85006 0.928217 4.00526 1.03209 4.13592 1.16301L5.27392 2.30101C5.40484 2.43167 5.50871 2.58686 5.57958 2.75771C5.65045 2.92856 5.68692 3.11171 5.68692 3.29667C5.68692 3.48164 5.65045 3.66479 5.57958 3.83564C5.50871 4.00649 5.40484 4.16168 5.27392 4.29234L4.99392 4.57234C4.88184 4.68439 4.79294 4.81743 4.73228 4.96384C4.67162 5.11026 4.6404 5.26719 4.6404 5.42567C4.6404 5.58416 4.67162 5.74109 4.73228 5.88751C4.79294 6.03392 4.88184 6.16695 4.99392 6.27901L7.55392 8.83967C7.66597 8.95175 7.799 9.04066 7.94542 9.10131C8.09184 9.16197 8.24877 9.19319 8.40725 9.19319C8.56573 9.19319 8.72267 9.16197 8.86908 9.10131C9.0155 9.04066 9.14853 8.95175 9.26058 8.83967L9.54125 8.55967C9.67191 8.42875 9.82711 8.32488 9.99796 8.25401C10.1688 8.18315 10.352 8.14667 10.5369 8.14667C10.7219 8.14667 10.905 8.18315 11.0759 8.25401C11.2467 8.32488 11.4019 8.42875 11.5326 8.55967L12.6706 9.69767C12.8015 9.82833 12.9054 9.98353 12.9762 10.1544C13.0471 10.3252 13.0836 10.5084 13.0836 10.6933C13.0836 10.8783 13.0471 11.0615 12.9762 11.2323C12.9054 11.4032 12.8015 11.5584 12.6706 11.689L12.1853 12.1743C11.3999 12.9603 10.2546 13.3103 9.21192 12.9283C7.30482 12.234 5.57243 11.1314 4.13592 9.69767C2.70219 8.26116 1.5996 6.52877 0.905251 4.62167Z"
+                                fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linejoin="round"
+                                stroke-width="1.5" />
+                        </svg>
+
+                        Call
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
     <script src="./script.js"></script>
 </body>
 
