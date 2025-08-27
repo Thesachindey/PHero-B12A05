@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="./assets/logo-dark.png" type="image/x-icon">
+    <title>Emergency Service Directory</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- daisyui+tailwind css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!-- header section start here -->
+    <header>
+        <nav class="flex flex-col md:flex-row place-items-start md:items-center gap-4 md:gap-8 justify-between px-8 py-4 w-full">
+            <!-- logo section -->
+            <div class="logo-section flex items-center gap-2">
+                <img class="w-10 " src="./assets/logo.png" alt="Logo">
+                <h1 class=" text-[#006747] font-bold text-[1.2rem]/6 ">Emergency <br> Service</h1>
+            </div>
+            <!-- badge section -->
+            <div class="badge-section text-sm   flex items-center gap-2">
+                <!-- heart Icon -->
+                <span id="heartIcon" class="flex items-center gap-2 bg-[#41FF6B1A] px-5 py-2 rounded-full">
+                    <p class="font-bold">0</p>
+                    <img class="w-5 h-5" src="./assets/heart.png" alt="Heart Icon">
+                </span>
+                <!-- coin Icon -->
+                <span id="coinIcon" class="flex items-center gap-2 bg-[#41FF6B1A] px-5 py-2 rounded-full">
+                    <p class="font-bold">100</p>
+                    <img class="w-5 h-5" src="./assets/coin.png" alt="Coin Icon">
+                </span>
+                <!-- copy Icon -->
+                <span id="copyCount" class="flex items-center gap-1 bg-[#00A63E] px-5 py-2 rounded-full">
+                    <p class="font-bold text-white ">0</p>
+                    <p class="font-bold text-white ">Copy</p>
+
+                </span>
+            </div>
+        </nav>
+    </header>
+    <script src="./script.js"></script>
+</body>
+
+</html>
