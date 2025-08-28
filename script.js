@@ -18,6 +18,7 @@ outlineHeartIcons.forEach((icon) => {
 // Show an alert with a message including the service name and number
 // Each call will cut 20 coins. Reduce Coin after each click.
 // If coins are less than 20, show a relevant alert and terminate the process.
+
 // Add this service into the Call History section with:
 // Service name
 // Service number
@@ -26,7 +27,18 @@ let callBtnList = document.querySelectorAll(".callBtn");
 let serviceNameList = document.querySelectorAll(".serviceName");
 let serviceNumberList = document.querySelectorAll(".serviceNum");
 let coinDisplay = document.querySelector(".coinCount");
-let totalCoin = coinDisplay.innerText = 30; // Initial coin count
+let totalCoin = coinDisplay.innerText = 100; // Initial coin count
+let callHistoryCont = document.getElementById("callHistoryCont");
+// let titleNum=document.getElementById("H-titleOfNum");
+// let number=document.getElementById("H-number");
+// let lastCalledTime=document.getElementById("H-lastCalledTime");
+
+// Get current date and time
+const now = new Date();
+const timeString = now.toLocaleTimeString();
+// clear btn 
+let clearBtn = document.getElementById("clearHistoryBtn");
+
 
 callBtnList.forEach((btn, i) => {
     btn.addEventListener("click", () => {
@@ -38,6 +50,28 @@ callBtnList.forEach((btn, i) => {
             currentCoins -= 20;
             totalCoin = currentCoins;
             coinDisplay.innerText = currentCoins;
+
+            // create element for store history item 
+            const historyItem = document.createElement('div');
+            historyItem.className = 'history-item';
+            historyItem.innerHTML = `
+               <div id="historyCard" class="flex items-center justify-between mt-1 px-4 py-3 w-full bg-[#fafafa] rounded-lg">
+                    <div class="card-item1 w-[70%]">
+                        <h1 id="H-titleOfNum" class="text-[.9rem] font-semibold">${serviceNameList[i].innerText}</h1>
+                        <p id="H-number" class="text-[.8rem] text-[#5C5C5C] ">${serviceNumberList[i].innerText}</p>
+                    </div>
+                    <div class="card-item2 w-[30%]">
+                        <p class="text-[.8rem] text-[#5C5C5C] " id="H-lastCalledTime">${timeString}</p>
+                    </div>
+                </div>
+`
+            callHistoryCont.append(historyItem);
+            // Clear the call history
+            clearBtn.addEventListener("click", () => {
+                historyItem.innerHTML = "";
+            });
+
+
         } else {
             alert("Not enough coins to make a call.");
         }
