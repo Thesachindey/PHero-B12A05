@@ -38,7 +38,7 @@ const now = new Date();
 const timeString = now.toLocaleTimeString();
 // clear btn 
 let clearBtn = document.getElementById("clearHistoryBtn");
-
+let copyBtn = document.querySelectorAll(".copyBtn");
 
 callBtnList.forEach((btn, i) => {
     btn.addEventListener("click", () => {
@@ -65,6 +65,7 @@ callBtnList.forEach((btn, i) => {
                     </div>
                 </div>
 `
+            // add history item
             callHistoryCont.append(historyItem);
             // Clear the call history
             clearBtn.addEventListener("click", () => {
@@ -73,9 +74,23 @@ callBtnList.forEach((btn, i) => {
 
 
         } else {
-            alert("Not enough coins to make a call.");
+            alert("📵 Not enough coins to make a call, need at least 20 coins.");
         }
     })
 }
 );
 
+// Copy button functionality
+let copyCount = document.querySelector(".copyCountNum ");
+let currentCopyCount = 0;
+copyCount.innerText = currentCopyCount;
+
+copyBtn.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+        // this is the main thing 
+        navigator.clipboard.writeText(serviceNumberList[i].innerText);
+        alert("📋 Copied " + serviceNumberList[i].innerText);
+        currentCopyCount++;
+        copyCount.innerText = currentCopyCount;
+    });
+});
