@@ -1,7 +1,4 @@
 
-
-## 6. Answer the following questions clearly:
-
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 
 ### ans:
