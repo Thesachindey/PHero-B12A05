@@ -48,5 +48,5 @@ stopPropagation() method stop Event Bubbling.
 
 
 
-### 📂 GitHub Repository :https://thesachindey.github.io/PHero-B12A05/
-### 🌐 Live Link :https://github.com/Thesachindey/PHero-B12A05
+ 📂 GitHub Repository : https://github.com/Thesachindey/PHero-B12A05
+ 🌐 Live Link : https://thesachindey.github.io/PHero-B12A05/
