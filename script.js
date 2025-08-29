@@ -53,7 +53,6 @@ callBtnList.forEach((btn, i) => {
 
             // create element for store history item 
             const historyItem = document.createElement('div');
-            historyItem.className = 'history-item';
             historyItem.innerHTML = `
                <div id="historyCard" class="flex items-center justify-between mt-1 px-4 py-3 w-full bg-[#fafafa] rounded-lg">
                     <div class="card-item1 w-[70%]">
@@ -83,7 +82,7 @@ callBtnList.forEach((btn, i) => {
 // Copy button functionality
 let copyCount = document.querySelector(".copyCountNum ");
 let currentCopyCount = 0;
-copyCount.innerText = currentCopyCount;
+// copyCount.innerText = currentCopyCount;
 
 copyBtn.forEach((btn, i) => {
     btn.addEventListener("click", () => {
@@ -94,3 +93,5 @@ copyBtn.forEach((btn, i) => {
         copyCount.innerText = currentCopyCount;
     });
 });
+
+
